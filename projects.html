@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>Joaquim Francalanci - Projects</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>Joaquim</span>
+            </div>
+            <div class="links">
+                 <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="index.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="#about">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#skills">Skills</a></div>
+                 <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="projects.html">Projects</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="blog.html">Blog</a></div>
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="#contact">Contact Us</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+               <a href="index.html">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                 <a href="projects.html">Projects</a>
+                <a href="blog.html">Blog</a>
+                <a href="#contact">Contact Us</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+    <section class="projects-section">
+        <div class="section-container">
+            <h2 data-aos="fade-down" data-aos-duration="1000">My Projects</h2>
+            <div class="projects-grid">
+                <div class="project" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100">
+                    <img src="assets/images/project1.png" alt="Project 1">
+                    <h3>Project Title 1</h3>
+                    <p>A brief description of the project. Tools and tech used: Python, pandas, matplotlib.</p>
+                    <a href="#">View Project</a>
+                </div>
+                <div class="project" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
+                    <img src="assets/images/project2.png" alt="Project 2">
+                    <h3>Project Title 2</h3>
+                    <p>A brief description of the project. Tools and tech used: R, SQL.</p>
+                     <a href="#">View Project</a>
+                </div>
+               <div class="project" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
+                    <img src="assets/images/project3.png" alt="Project 3">
+                    <h3>Project Title 3</h3>
+                    <p>A brief description of the project. Tools and tech used: Python, scikit-learn, Tableau.</p>
+                    <a href="#">View Project</a>
+                </div>
+             </div>
+        </div>
+     </section>
+       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({offset:0});
+        </script>
+        <script>
+            function hamburg(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(0px)"
+            }
+            function cancel(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(-500px)"
+            }
+        </script>
+</body>
+</html>
