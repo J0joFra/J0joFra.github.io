@@ -183,7 +183,7 @@ section{
 }
 
 .typewriter span::before{
-    content: "Developer";
+    content: "Analyst";
     animation: words 15s infinite;
 }
 
@@ -204,13 +204,13 @@ section{
 
 @keyframes words {
     0%, 33%{
-        content: "Developer";
+        content: "Analyst";
     }
     34%, 66%{
-        content: "Designer";
+        content: "Visualizer";
     }
     67%, 100%{
-        content: "Youtuber";
+        content: "Modeler";
     }
 }
 
@@ -307,5 +307,3 @@ section{
         margin-bottom: 0px;
     }
 }
-
-
