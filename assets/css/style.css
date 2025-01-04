@@ -318,12 +318,12 @@ section{
 }
 
 .about-text p {
-     margin-bottom: 15px;
+    margin-bottom: 15px;
 }
 
 /*---Skills Section-----*/
 .skills-section{
-    background: linear-gradient(to right, rgb(255,255,255), rgb(254,215,173));
+    background: linear-gradient(to left, rgb(255,255,255), rgb(254,215,173));
 }
 
 .skills-grid{
