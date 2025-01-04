@@ -14,7 +14,7 @@ html{
 
 body{
     width: 100%;
-    height: auto; /* Changed to auto for content expansion */
+    height: auto;
     overflow-x: hidden;
     background: linear-gradient(to right, rgb(255,255,255), rgb(254,215,173));
 }
@@ -328,10 +328,10 @@ section{
 }
 
 .skills-grid{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 20px;
-  margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
 }
 
 .skill{
