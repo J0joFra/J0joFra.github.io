@@ -323,7 +323,7 @@ section{
 
 /*---Skills Section-----*/
 .skills-section{
-    background: linear-gradient(to left, rgb(255,255,255), rgb(254,215,173));
+    background: linear-gradient(to right, rgb(254,215,173), rgb(255,255,255));
 }
 
 .skills-grid{
