@@ -262,12 +262,12 @@ section{
 }
 
 .content button:hover{
- scale: 1.1;
- color: rgb(109,67, 0);
- border: 2px solid rgb(109,67, 0);
- background-color: transparent;
- font-weight: 700;
- box-shadow: 0 0 40px rgb(109,67, 0);
+    scale: 1.1;
+    color: rgb(109,67, 0);
+    border: 2px solid rgb(109,67, 0);
+    background-color: transparent;
+    font-weight: 700;
+    box-shadow: 0 0 40px rgb(109,67, 0);
 }
 
 /*---About Section----*/
@@ -323,7 +323,7 @@ section{
 
 /*---Skills Section-----*/
 .skills-section{
-    background-color: #F5EBE0;
+    background-color: #FEFAE0;
 }
 
 .skills-grid{
@@ -507,8 +507,8 @@ section{
     resize: vertical;
 }
 .contact-form button{
-     background-color: rgb(109,67, 0);
-    color: white;
+    background-color: rgb(109,67, 0);
+    color: rgb(0, 0, 0);
     padding: 12px 25px;
     border: none;
     border-radius: 5px;
