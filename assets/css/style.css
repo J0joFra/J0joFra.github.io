@@ -342,13 +342,14 @@ section{
     display: flex;
     flex-direction: column;
     align-items: center;
-     text-align: center;
+    text-align: center;
+    min-width: 280px;
 }
 
 .skill i {
     font-size: 3rem;
     color: rgb(109,67, 0);
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .skill h3{
