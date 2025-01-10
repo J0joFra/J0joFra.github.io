@@ -4,7 +4,18 @@ document.addEventListener('DOMContentLoaded', function () {
             id: 1,
             title: "Kickstarter Projects",
             image: "assets/images/dashboard1.png",
-            description: "**Kickstarter Projects** 🚀\n\nKickstarter è una piattaforma di crowdfunding progettata per aiutare i creatori a trasformare le loro idee in realtà, connettendoli a sostenitori in tutto il mondo.\n\n**Caratteristiche principali:**\n- Analisi dettagliata dei progetti, inclusi obiettivi, finanziamenti e tassi di successo.\n- Colonne chiave come:\n  - **usd_pledged**: importo finanziato in USD (conversione effettuata da Kickstarter).\n  - **usd_pledged_real** e **usd_goal_real**: conversioni accurate basate sull'API Fixer.io.\n\n**Strumenti utilizzati:**\n- Power BI 📊\n\n**Fonte dati:**\n- [Kaggle Dataset - Kickstarter Projects](https://www.kaggle.com/datasets/kemical/kickstarter-projects)\n\n💡 Questo progetto è un'eccellente risorsa per esplorare le tendenze del crowdfunding e analizzare le performance dei progetti su Kickstarter.",
+            description: `**Kickstarter Projects** 🚀<br><br>
+            Kickstarter è una piattaforma di crowdfunding progettata per aiutare i creatori a trasformare le loro idee in realtà, connettendoli a sostenitori in tutto il mondo.<br><br>
+            **Caratteristiche principali:**<br>
+            - Analisi dettagliata dei progetti, inclusi obiettivi, finanziamenti e tassi di successo.<br>
+            - Colonne chiave come:<br>
+              - **usd_pledged**: importo finanziato in USD (conversione effettuata da Kickstarter).<br>
+              - **usd_pledged_real** e **usd_goal_real**: conversioni accurate basate sull'API Fixer.io.<br><br>
+            **Strumenti utilizzati:**<br>
+            - Power BI 📊<br><br>
+            **Fonte dati:**<br>
+            - <a href="https://www.kaggle.com/datasets/kemical/kickstarter-projects" target="_blank">Kaggle Dataset - Kickstarter Projects</a><br><br>
+            💡 Questo progetto è un'eccellente risorsa per esplorare le tendenze del crowdfunding e analizzare le performance dei progetti su Kickstarter.`,
         },
         {
             id: 2,
@@ -49,8 +60,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (project) {
               modalImage.src = project.image;
               modalDescription.innerHTML = project.description;
-              //modal.style.display = "block"; // Removed this
-              modal.classList.add('show'); // Added this to actually show the modal by adding the class
+              modal.classList.add('show');
             }
         });
     });
@@ -58,14 +68,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function closeModal() {
     const modal = document.getElementById("projectModal");
-   // modal.style.display = "none"; // Removed this
-   modal.classList.remove('show'); // Added this to remove the class and hide the modal
+   modal.classList.remove('show');
 }
 
  window.onclick = function(event) {
       const modal = document.getElementById("projectModal");
     if (event.target == modal) {
-      // modal.style.display = "none"; // Removed this
-      modal.classList.remove('show') // Added this to remove the class and hide the modal
+      modal.classList.remove('show')
     }
   }

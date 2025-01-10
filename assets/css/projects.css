@@ -39,6 +39,8 @@
     font-size: 1rem;
     color: #333;
     line-height: 1.6;
+    white-space: pre-line; /* Needed to recognize line breaks */
+   overflow-wrap: break-word; /* Break long words to avoid overflow */
 }
 
 .close-modal {
