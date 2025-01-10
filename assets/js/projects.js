@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
             id: 1,
             title: "Kickstarter Projects",
             image: "assets/images/dashboard1.png",
-            description: "Kickstarter is a crowdfunding platform that helps creators bring their projects to life. Tools and tech used: R, SQL",
+            description: "Kickstarter is a crowdfunding platform that helps creators bring their projects to life.",
         },
         {
             id: 2,
