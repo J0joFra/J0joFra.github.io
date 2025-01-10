@@ -41,29 +41,31 @@ document.addEventListener('DOMContentLoaded', function () {
     const modal = document.getElementById("projectModal");
     const modalImage = document.querySelector(".modal-img");
     const modalDescription = document.querySelector(".modal-description");
-    
-    projectButtons.forEach((button) => {
-        button.addEventListener("click", function (e) {
-            const projectId = parseInt(e.target.closest(".project").dataset.projectId);
-                const project = projects.find(proj => proj.id === projectId);
-                if (project) {
-                    modalImage.src = project.image;
-                    modalDescription.innerHTML = project.description;
-                    //modal.style.display = "block";
-                    modal.classList.add('show')
-                }
+
+     projectButtons.forEach((button) => {
+      button.addEventListener("click", function (e) {
+         const projectId = parseInt(e.target.closest(".project").dataset.projectId);
+            const project = projects.find(proj => proj.id === projectId);
+            if (project) {
+              modalImage.src = project.image;
+              modalDescription.innerHTML = project.description;
+              //modal.style.display = "block"; // Removed this
+              modal.classList.add('show'); // Added this to actually show the modal by adding the class
+            }
         });
     });
 });
+
 function closeModal() {
     const modal = document.getElementById("projectModal");
-    // modal.style.display = "none";
-    modal.classList.remove('show')
+   // modal.style.display = "none"; // Removed this
+   modal.classList.remove('show'); // Added this to remove the class and hide the modal
 }
+
  window.onclick = function(event) {
-        const modal = document.getElementById("projectModal");
+      const modal = document.getElementById("projectModal");
     if (event.target == modal) {
-        // modal.style.display = "none";
-        modal.classList.remove('show')
+      // modal.style.display = "none"; // Removed this
+      modal.classList.remove('show') // Added this to remove the class and hide the modal
     }
   }
