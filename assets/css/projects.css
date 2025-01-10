@@ -8,6 +8,14 @@
     height: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.7);
+    /* Added for smooth fade-in */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project-modal.show {
+  display: block; /* Show when 'show' class is added */
+  opacity: 1; /* Fade in */
 }
 
 .modal-content {
@@ -32,6 +40,7 @@
     color: #333;
     line-height: 1.6;
 }
+
 .close-modal {
     position: absolute;
     top: 10px;
@@ -40,9 +49,11 @@
     color: #aaa;
     cursor: pointer;
 }
+
 .close-modal:hover {
     color: #000;
 }
+
 .view-project-btn {
     display: inline-block;
     padding: 10px 20px;
@@ -58,4 +69,65 @@
 
 .view-project-btn:hover {
     background-color: #0056b3;
+}
+
+/*---Projects Section---*/
+.projects-section {
+    background-color: white;
+    padding: 40px 0;  /*added some padding*/
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.project {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+.project img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2)
+}
+
+.project h3 {
+   color: black;
+   margin-bottom: 10px;
+}
+
+.project p {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.project .view-project-btn {
+    background-color: rgb(109,67, 0);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-top: auto; /* push button to the bottom*/
+}
+
+.project .view-project-btn:hover {
+    background-color: #664100;
 }

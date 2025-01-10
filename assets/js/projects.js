@@ -42,25 +42,28 @@ document.addEventListener('DOMContentLoaded', function () {
     const modalImage = document.querySelector(".modal-img");
     const modalDescription = document.querySelector(".modal-description");
     
-     projectButtons.forEach((button) => {
-      button.addEventListener("click", function (e) {
-         const projectId = parseInt(e.target.closest(".project").dataset.projectId);
-            const project = projects.find(proj => proj.id === projectId);
-            if (project) {
-              modalImage.src = project.image;
-              modalDescription.innerHTML = project.description;
-              modal.style.display = "block";
-            }
+    projectButtons.forEach((button) => {
+        button.addEventListener("click", function (e) {
+            const projectId = parseInt(e.target.closest(".project").dataset.projectId);
+                const project = projects.find(proj => proj.id === projectId);
+                if (project) {
+                    modalImage.src = project.image;
+                    modalDescription.innerHTML = project.description;
+                    //modal.style.display = "block";
+                    modal.classList.add('show')
+                }
         });
     });
 });
 function closeModal() {
     const modal = document.getElementById("projectModal");
-    modal.style.display = "none";
+    // modal.style.display = "none";
+    modal.classList.remove('show')
 }
  window.onclick = function(event) {
-      const modal = document.getElementById("projectModal");
+        const modal = document.getElementById("projectModal");
     if (event.target == modal) {
-       modal.style.display = "none";
+        // modal.style.display = "none";
+        modal.classList.remove('show')
     }
-}
+  }
