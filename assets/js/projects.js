@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
             id: 1,
             title: "Kickstarter Projects",
             image: "assets/images/dashboard1.png",
-            description: "Kickstarter is a crowdfunding platform that helps creators bring their projects to life.",
+            description: "**Kickstarter Projects** 🚀\n\nKickstarter è una piattaforma di crowdfunding progettata per aiutare i creatori a trasformare le loro idee in realtà, connettendoli a sostenitori in tutto il mondo.\n\n**Caratteristiche principali:**\n- Analisi dettagliata dei progetti, inclusi obiettivi, finanziamenti e tassi di successo.\n- Colonne chiave come:\n  - **usd_pledged**: importo finanziato in USD (conversione effettuata da Kickstarter).\n  - **usd_pledged_real** e **usd_goal_real**: conversioni accurate basate sull'API Fixer.io.\n\n**Strumenti utilizzati:**\n- Power BI 📊\n\n**Fonte dati:**\n- [Kaggle Dataset - Kickstarter Projects](https://www.kaggle.com/datasets/kemical/kickstarter-projects)\n\n💡 Questo progetto è un'eccellente risorsa per esplorare le tendenze del crowdfunding e analizzare le performance dei progetti su Kickstarter.",
         },
         {
             id: 2,
